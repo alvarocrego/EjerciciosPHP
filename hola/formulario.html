@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+table tr td {
+	border: 1px black solid;
+}
+
+.rojo {
+	color: red;
+}
+
+.verde {
+	color: green;
+}
+h1{
+	text-align: center;
+}
+.centrar {
+	display: block;
+	margin: auto;
+}
+.linea{
+	display: inline;
+}
+.principal{
+	font-size: xx-large;
+}
+</style>
+</head>
+<body>
+	<form action="recogida.php">
+	<fieldset>
+	<legend class="principal">Formulario Alumno</legend>
+		<fieldset>
+		<legend class="rojo">DNI:</legend>
+				<input type="text" name="dni" />
+				</fieldset>
+<fieldset>
+<legend class="rojo">Nombre:</legend>
+			<input type="text" name="nombre"/>
+		</fieldset>
+		<fieldset>
+			<legend class="rojo">Apellido:</legend>
+		<input type="text" name="apellido"/>
+		</fieldset>
+			<fieldset>
+			<legend class="rojo">Dirección:</legend>
+			<input type="text" name="direccion"/>
+			</fieldset>
+			<fieldset>
+			<legend class="rojo">E-mail:</legend>
+			<input type="email" name="email"/>
+			</fieldset>
+		<fieldset>
+			<legend class="rojo">Contraseña:</legend>
+			<input type="password" name="contrasenya"/>
+			</fieldset>
+			<fieldset>
+			<legend class="rojo">¿Que nota piensas sacar?</legend>
+			<input class="linea" type="radio" name="nota" value="excelente"/><label class="linea">Excelente</label><input class="linea" type="radio" name="nota" value="notable"/><label class="linea">Notable</label><input class="linea" type="radio" name="nota" value="bien"/><label class="linea">Bien</label><input class="linea" type="radio" name="nota" value="aprobado"/><label class="linea">Aprobado</label><input class="linea" type="radio" name="nota" value="suspendio"/><label class="linea">Suspendido</label>
+			</fieldset>
+			<fieldset>
+			<legend  class="rojo">Marca las Asignaturas que mas te gustan este año:</legend></td>
+			<input class="linea" type="checkbox" name="casilla1" value="DAW" /><label class="verde linea">Despliege de Apliaciones Web</label><br/><br/><input class="linea" type="checkbox" name="casilla2" value="DIW" /><label class="verde linea">Diseño de Interfaces Web</label><br/><br/><input class="linea" type="checkbox" name="casilla3" value="DWES" /><label class="verde linea">Desarrollo Web en Entorno Servidor</label><br/><br/><input class="linea" type="checkbox" name="casilla4" value="DWEC" /><label class="verde linea">Desarrollo Web en Entorno Cliente</label><br/><br/><input class="linea" type="checkbox" name="casilla5" value="EIE" /><label  class="verde linea">Empresa e Iniciativa Emprendedora</label><br/><br/><input class="linea" type="checkbox" name="casilla6" value="LE" /><label class="verde linea">Lengua Extranjera</label>
+			</fieldset>
+		
+		</fieldset>
+		<center>
+		<input type="submit" value="Enviar" /><input type="reset" value="Borrar" />
+		</center>
+	</form>
+</body>
+</html>
