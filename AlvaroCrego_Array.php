@@ -80,47 +80,86 @@ echo "<h3>i)</h3>";
 
 $animales0 = $animales[0];
 
-echo $animales0[0]. "<br/>";
-echo $animales0[1]. "<br/>";
-echo $animales0[2]. "<br/><br/>";
+echo $animales0[0] . "<br/>";
+echo $animales0[1] . "<br/>";
+echo $animales0[2] . "<br/><br/>";
 
 $animales1 = $animales[1];
 
-echo $animales1[0]. "<br/>";
-echo $animales1[1]. "<br/>";
-echo $animales1[2]. "<br/><br/>";
+echo $animales1[0] . "<br/>";
+echo $animales1[1] . "<br/>";
+echo $animales1[2] . "<br/><br/>";
 
 $animales2 = $animales[2];
 
-echo $animales2[0]. "<br/>";
-echo $animales2[1]. "<br/>";
-echo $animales2[2]. "<br/><br/>";
+echo $animales2[0] . "<br/>";
+echo $animales2[1] . "<br/>";
+echo $animales2[2] . "<br/><br/>";
 
 $animales3 = $animales[3];
 
-echo $animales3[0]. "<br/>";
-echo $animales3[1]. "<br/>";
-echo $animales3[2]. "<br/><br/>";
+echo $animales3[0] . "<br/>";
+echo $animales3[1] . "<br/>";
+echo $animales3[2] . "<br/><br/>";
 
 $animales4 = $animales[4];
 
-echo $animales4[0]. "<br/>";
-echo $animales4[1]. "<br/>";
-echo $animales4[2]. "<br/>";
+echo $animales4[0] . "<br/>";
+echo $animales4[1] . "<br/>";
+echo $animales4[2] . "<br/>";
 
 echo "<h3>j)</h3>";
 
-while (list(, $valor) = each($productos)) {
-    for($x=0;$x<count($valor);$x++){
-        echo $valor[$x];
+while (list(, $valor) = each($animales)) {
+    for ($x = 0; $x < count($valor); $x++) {
+        echo $valor[$x] . "<br/>";
     }
 }
 
 echo "<h3>k)</h3>";
 
-
+for ($x = 0; $x < count($animales); $x++) {
+    $subarray = $animales[$x];
+    for ($y = 0; $y < count($subarray); $y++) {
+        echo $subarray[$y] . "<br/>";
+    }
+}
 
 echo "<h3>l)</h3>";
 
+foreach ($animales as $subarray1) {
+    foreach ($subarray1 as $value) {
+        echo "$value" . "<br/>";
+    }
+}
 
+echo "<h1>ARRAY BIDIMENSIONAL ASOCIATIVO.</h1>";
+
+$productos = array(array("Codigo" => "CB", "Descripcion" => " Cebollas", "Precio" => 100),
+    array("Codigo" => "AC", "Descripcion" => "Aceite", "Precio" => 120),
+    array("Codigo" => "MZ", "Descripcion" => "Manzanas", "Precio" => 92)
+);
+print_r($productos);
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+
+$productos2 = array("prod1" => array("Codigo" => "CB", "Descripcion" => " Cebollas", "Precio" => 100),
+    "prod2" => array("Codigo" => "AC", "Descripcion" => "Aceite", "Precio" => 120),
+    "prod3" => array("Codigo" => "MZ", "Descripcion" => "Manzanas", "Precio" => 92)
+);
+print_r($productos2);
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+
+echo "<h3>m)</h3>";
+
+
+
+echo "<h3>n)</h3>";
+
+echo "<h3>o)</h3>";
 
